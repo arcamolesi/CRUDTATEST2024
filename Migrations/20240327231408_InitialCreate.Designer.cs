@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRUDTATEST2024.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20240327202238_inicial")]
-    partial class inicial
+    [Migration("20240327231408_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
