@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CRUDTATEST2024.Models
 {
-    //teste de tabelas
+    
     [Table("Clientes")]
     public class Cliente
     {
