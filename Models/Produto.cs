@@ -16,9 +16,11 @@ namespace CRUDTATEST2024.Models
         public string descricao { get; set; }
 
         [Display(Name = "Quantidade: ")]
+        [DisplayFormat(DataFormatString = "{0,10:N2}")]
         public float quantidade { get; set; }
 
         [Display(Name = "Valor: ")]
+        [DisplayFormat(DataFormatString = "{0,10:N2}")]
         public float  valor { get; set; }
     }
 }

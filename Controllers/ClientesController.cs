@@ -43,6 +43,7 @@ namespace CRUDTATEST2024.Controllers
         }
 
         // GET: Clientes/Create
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
@@ -65,6 +66,7 @@ namespace CRUDTATEST2024.Controllers
         }
 
         // GET: Clientes/Edit/5
+        [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)

@@ -63,6 +63,9 @@ namespace CRUDTATEST2024.Controllers
             if (ModelState.IsValid)
             {
                 _context.Add(item);
+                var prod = await _context.Produtos.FindAsync(item.produtoID);
+                prod.quantidade = prod.quantidade - item.quantidade;
+                _context.Update(prod);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }

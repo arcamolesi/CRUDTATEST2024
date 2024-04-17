@@ -5,10 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Produtos</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Adicionar Novo</a>
 </p>
 <table class="table">
     <thead>
@@ -29,13 +29,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.descricao)
+                    @Html.DisplayFor(modelItem => item.descricao)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.quantidade)
+                    @Html.DisplayFor(modelItem => item.quantidade)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.valor)
+                    @Html.DisplayFor(modelItem => item.valor, "N2")
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
